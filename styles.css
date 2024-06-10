@@ -1,0 +1,129 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(234, 243, 253);
+}
+h1{
+    text-transform: capitalize;
+}
+.container{
+background-color: white;
+width: 65vw;
+border-radius: 20px;
+margin-top: 60px;
+}
+.insider{
+    margin: 50px 50px;
+}
+ /* navbar */
+ .navbar{
+    display: flex;
+    justify-content: space-between;
+   margin: 30px 0;
+   margin-bottom: 50px;
+ }
+ .navlinks{
+    display: flex;
+    width: 400px;
+    justify-content: space-around;
+    align-items: center;
+    
+ }
+ .input{
+    border: 1px solid rgb(207, 196, 196);
+    display: flex;
+    padding: 8px;
+ }
+  input{
+    border: none;
+    outline: none;
+ }
+ .input:focus-within{
+    border: 1px solid rgb(6, 150, 218, 0.4);
+ }
+ .navlinks a{
+   text-decoration: none;
+   text-transform: capitalize;
+color: black;
+padding: 10px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 15px;
+ }
+ .navlinks a:hover{
+    background: rgb(6, 150, 218, 0.5);
+    border-radius: 5px;
+
+ }
+/* the grid */
+.thegrid{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+.griditem{
+    display: flex;
+    height: 160px;
+    justify-content: center;
+    align-items: center;
+}
+.griditem:hover{
+    box-shadow:  31px 31px 62px #c7c7c7,
+    -31px -31px 62px #f9f9f9;
+   border-radius: 10px;
+   /* border: 1px solid rgb(6, 150, 218, 0.2); */
+}
+.griditem .div1{
+    margin-left: 10px;
+}
+.griditem img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+.div1 button{
+    background: transparent;
+    border-radius: 10px;
+    border: 1px solid rgb(197, 190, 190);
+    color: rgb(40, 149, 221);
+    margin-top: 3px;
+}
+.div1 h3{
+    margin:0;
+   padding: 0;
+}
+.div1 h4{
+    margin-top:0;
+}
+@media screen and (max-width: 1128px) {
+    .thegrid{
+       
+        grid-template-columns: repeat(2, 1fr);
+    
+    }
+}
+@media screen and (max-width: 783px) {
+    .thegrid{
+       
+        grid-template-columns: repeat(1, 1fr);
+    
+    }
+    h1{
+        text-align: center;
+    }
+    .navbar{
+        margin: 50px 50px;
+      flex-wrap: wrap;
+     }
+     .navlinks{
+        flex-direction: column;
+     }
+     .griditem{
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+     }
+ .navlinks{
+    margin-top: 5px;
+ }
+}
