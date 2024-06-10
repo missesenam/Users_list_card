@@ -115,6 +115,7 @@ font-size: 15px;
     .navbar{
         margin: 50px 50px;
       flex-wrap: wrap;
+      justify-content: center;
      }
      .navlinks{
         flex-direction: column;
@@ -126,4 +127,23 @@ font-size: 15px;
  .navlinks{
     margin-top: 5px;
  }
+
+ 
+
+}
+
+@media screen and (max-width: 940px) {
+    .navbar{
+        margin: 50px 50px;
+      flex-wrap: wrap;
+     }
+     .input{
+        margin: 0 auto;
+      }
+
+        .navlinks{
+            flex-direction: column;
+        
+    
+    }
 }
